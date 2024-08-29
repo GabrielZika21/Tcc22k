@@ -1,0 +1,98 @@
+
+.cabera{
+   background-color: rgba(231, 224, 14, 0);
+    color: #000000;
+    
+    
+    text-align: center;
+    
+}
+.cont {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #007BFF;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+.tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background: #f0f2f5;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    margin-right: 2px;
+}
+.tab:hover {
+    background-color: #e0e0e0;
+}
+.tab.active {
+    background-color: #fff;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+.tab-content {
+    display: none;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tab-content.active {
+    display: block;
+}
+img.vehicle-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: -200px;
+}
+h2, h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+li:last-child {
+    border-bottom: none;
+}
+
+.weg {
+    width: 200px;
+    height: 200px;
+    margin-left: 505px;
+    
+}
+
+/*   // <button><Link to ='/cadastrar'>Enviar</Link></button> // 
