@@ -28,7 +28,7 @@ import raam from '/src/IMG/raam.png'
 function Home () { 
 
 
- 
+  const slides = [Fiat, chevrolet, citroen, Nissan, toyota, peugeot, renault, w]
 
    
       return (
@@ -55,43 +55,24 @@ function Home () {
             
           </header>
            
-
-          <div>
-        <section className="tittle-logos">
-          <h1>MARCAS</h1>
-        </section>
-        <div className="swiper">
-          <div className="swiper-wrapper ">
-            <div className="swiper-slide">
-              <img src="./src/IMG/Fiat.png" />
+          <div className="divpai">
+            <div className="divslide ">
+              <Swiper 
+                modules={[Navigation, Pagination]}
+                navigation
+                pagination
+                loop
+                >
+                  {slides.map(slide => (
+                    <SwiperSlide>
+                      <img src={slide} alt={slides} />
+                    </SwiperSlide>
+                  ))}
+                  
+                </Swiper>
+               </div>
             </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/w.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/chevrolet.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/toyota.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/renault.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/peugeot.png" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/citroen.jpg" />
-            </div>
-            <div className="swiper-slide">
-              <img src="./src/IMG/Nissan.png" />
-            </div>
-          </div>
-          <div className="swiper-button-next" />
-          <div className="swiper-button-prev" />
-        </div>
-      </div>
-      
+         
 
 
 
@@ -114,10 +95,6 @@ function Home () {
         </div>
     </div>
            
-           
-          
-      
-
 
            <div className="off">
            <h1><center>Na Weggie oferecemos :</center></h1>
@@ -212,7 +189,6 @@ function Home () {
      
       
     }
-  
 
 
 
